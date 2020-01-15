@@ -1,4 +1,4 @@
 const Person = require("./Person.js");
-
-let p = new Person("Eric", "orange");
+const Eric = require("./Eric.js");
+let p = new Eric("Eric", "orange");
 p.speak();
