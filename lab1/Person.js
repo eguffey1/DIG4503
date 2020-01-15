@@ -1,13 +1,13 @@
+const chalk = require('chalk');
 class Person {
     constructor(name, favoriteColor) {
         this.name = name;
         this.favoriteColor = favoriteColor;
     }
     speak() {
-        console.log(this.name);
-        console.log(this.favoriteColor);
+        console.log(chalk.keyword(this.favoriteColor)(this.name));
+        
     }
 }
-var person = new Person();
 
 module.exports = Person;
