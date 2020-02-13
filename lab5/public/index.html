@@ -1,0 +1,58 @@
+<html>
+    <body>
+        <script>
+            function readName(event) {
+
+                event.preventDefault();
+                let element = document.querySelector("#pokeName");
+
+                fetch("/name/" + element.value)
+                .then((res) => {
+                    return res.json();
+                })
+                .then((processed) => {
+                    let reporting = document.querySelector("#selected");
+                    if(processed.error) {
+                        reporting.innerHTML = processed.error + " You entered: " + element.value;
+                    } else {
+                        reporting.innerHTML = processed[0].name;
+                        console.log(processed);
+                    }
+
+                });
+            }
+            function readId(event) {
+
+                event.preventDefault();
+                let element = document.querySelector("#pokeID");
+
+                fetch("/id/" + element.value)
+                .then((res) => {
+                    return res.json();
+                })
+                .then((processed) => {
+                    let reporting = document.querySelector("#selected");
+                    if(processed.error) {
+                        reporting.innerHTML = processed.error + " You entered: " + element.value;
+                    } else {
+                        reporting.innerHTML = processed[0].name;
+                    }
+
+                });
+            }
+        </script>
+        <h2>Pokemon Name</h2>
+        <form onsubmit="readName(event)">
+            <input id="pokeName" type="text">
+            <button>Submit</button>
+        </form>
+        <h2>Pokemon ID</h2>
+        <form onsubmit="readId(event)">
+            <input id="pokeId" type="text">
+            <button>Submit</button>
+        </form>
+        <hr>
+        <h2>You selected:</h2>
+        <div id="selected"></div>
+    </body>
+</html>
