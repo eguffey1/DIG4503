@@ -46,7 +46,7 @@ App.get("/movies/title/:title", (req, res) => {
 });
 App.get("/movies/year/:year", (req, res) => {
 
-  let result = {"error": "Could not a movie with that title!"};
+  let result = {"error": "Could not a movie in that year!"};
 
   database.findYear(req.params.year).then((year) => {
       if(year != null) {
