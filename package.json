@@ -1,0 +1,20 @@
+{
+  "name": "DIG4503",
+  "version": "1.0.0",
+  "description": "Providing all resources for Erickson Guffey for the class Rapid App Development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eguffey1/DIG4503.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eguffey1/DIG4503/issues"
+  },
+  "homepage": "https://github.com/eguffey1/DIG4503#readme"
+}
