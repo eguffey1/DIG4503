@@ -46,20 +46,12 @@ App.get("/movies/title/:title", (req, res) => {
 });
 App.get("/movies/year/:year", (req, res) => {
 
-  // Set an "error" result to send back first
   let result = {"error": "Could not a movie with that title!"};
 
-  // findTitle() will return a Promise
-  // Once it finishes, send the response
   database.findYear(req.params.year).then((year) => {
-
-      // If a movie was not found, it will be null
       if(year != null) {
-          // If it is not null, set result to whatever movie is
           result = year;
       }
-      
-      // Send as a response: either the "error" object or the movie object found
       res.json(result);
 
   });
