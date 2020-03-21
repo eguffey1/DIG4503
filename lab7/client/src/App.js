@@ -13,7 +13,7 @@ class App extends React.Component {
   }
 
   // Update the internal state.table
-  // (This is called from YearSearch.)
+  // (This is called from YearSearch.) this. is a local this because of the arrow function
   setResultsTable = (processed) => {
     this.setState({"table": processed});
   }
