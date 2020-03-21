@@ -1,46 +1,34 @@
 class NameSearch extends React.Component {
-
-  // Instead of using an arror function as the value of
-  //  the function, the arrow function is "in" the JSX value.
-  //
-  // This function is called inside of that arrow function.
-  // 
-  getName() {
-    // Look for an element with the ID of nameInput
-    let name = document.querySelector("#nameInput");
-
-    // Use the same origin
-    // 
-    // Based on the name, fetch using the server's
-    //  request parameter.
-    fetch("/api/pokemon/name/" + name.value)
-    .then((res) => { return res.json(); } )
-    .then((processed) => {
-
-      // Look for an element with the ID of results
-      let resultElement = document.querySelector("#results");
-
-      // If the processed object has an 'error' property...
-      if(processed.error) {
-        //... write that it could not be found.
-        resultElement.innerHTML = "Could not find!";
-      } else {
-        //... otherwise, since no error, write its ID.
-        resultElement.innerHTML = "Its ID is " + processed.id;
-      }
-
-    });
+  constructor(props) {
+    super(props);
+    this.state = {
+      myObjects: []
+    }
   }
+  
+    getId = () => {
 
-  render() {
-    return (
-      <div>
-        <input type="text" id="nameInput" />
-        <button onClick={() => { this.getName } }>SUBMIT</button>
-        <div id="results"></div>
-      </div>
-    );
-  }
+        let name = document.querySelector('#NameSearch').value;
+        console.log(id)
+
+        fetch("http://localhost:3000/api/pokemon/name/" + name)
+        .then((res) => { return res.json() })
+        .then((processed) => {
+            this.props.callback(processed)
+            console.log(processed)
+        });
+
+    }
+
+    render() {
+        return(
+          <div>
+          <input type="text" id="NameSearch" />
+          <button onClick={this.getId}>SUBMIT</button>
+          <div id="results"></div>
+        </div>
+        );
+    }
 
 }
 
