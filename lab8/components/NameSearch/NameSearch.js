@@ -5,11 +5,11 @@ class NameSearch extends React.Component {
       myObjects: []
     }
   }
-  
-    getId = () => {
+
+    getName = () => {
 
         let name = document.querySelector('#NameSearch').value;
-        console.log(id)
+        console.log(name)
 
         fetch("http://localhost:3000/api/pokemon/name/" + name)
         .then((res) => { return res.json() })
@@ -24,7 +24,7 @@ class NameSearch extends React.Component {
         return(
           <div>
           <input type="text" id="NameSearch" />
-          <button onClick={this.getId}>SUBMIT</button>
+          <button onClick={this.getName}>SUBMIT</button>
           <div id="results"></div>
         </div>
         );

@@ -12,7 +12,7 @@ class Home extends React.Component {
   }
 
   setResultsTable = (processed) => {
-    this.setState({table: table.processed});
+    this.setState({table: processed});
     console.log(processed)
   }
 
@@ -41,9 +41,11 @@ class Home extends React.Component {
   render() {
     return (
       <div>
+        <h3>Search Pokemon By Id</h3>
         <IdSearch callback={this.setResultsTable} />
         {this.createResultsTable()}
         <hr />
+        <h3>Search Pokemon By Name</h3>
         <NameSearch callback={this.setResultsTable} />
         {this.createResultsTable()}
       </div>
