@@ -1,10 +1,7 @@
+import Link from 'next/link'
 class IdSearch extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      myObjects: []
-    }
-  
   }
     getId = () => {
 

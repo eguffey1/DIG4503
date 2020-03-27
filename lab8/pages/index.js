@@ -12,7 +12,7 @@ class Home extends React.Component {
   }
 
   setResultsTable = (processed) => {
-    this.setState({table: processed});
+    this.setState({table: [processed]});
     console.log(processed)
   }
 

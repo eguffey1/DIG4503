@@ -1,0 +1,46 @@
+.cssinput {
+  padding: 5px;
+  font-size: 16px;
+  border-width: 2px;
+  border-color: #ff0000;
+  background-color: #747dfb;
+  color: #ffffff;
+  border-style: solid;
+  border-radius: 0px;
+  box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+  text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+}
+.cssinput:focus {
+  outline:none;
+}
+.myButton {
+	box-shadow: 3px 4px 0px 0px #dbc9c7;
+	background:linear-gradient(to bottom, #ff1500 5%, #ffffff 100%);
+	background-color:#ff1500;
+	border-radius:10px;
+	border:1px solid #ff1100;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:17px;
+	padding:6px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b0332a;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #ffffff 5%, #ff1500 100%);
+	background-color:#ffffff;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.hr {
+  border-top: 7px dotted red;
+  width: 50%;
+  position: absolute;
+}
+.blue {
+  color: blue;
+}
