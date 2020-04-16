@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/DIG4503/static/css/main.27919384.chunk.css",
+    "main.js": "/DIG4503/static/js/main.82ca4c10.chunk.js",
+    "main.js.map": "/DIG4503/static/js/main.82ca4c10.chunk.js.map",
+    "runtime-main.js": "/DIG4503/static/js/runtime-main.e5735d54.js",
+    "runtime-main.js.map": "/DIG4503/static/js/runtime-main.e5735d54.js.map",
+    "static/css/2.50bb061f.chunk.css": "/DIG4503/static/css/2.50bb061f.chunk.css",
+    "static/js/2.2f06d179.chunk.js": "/DIG4503/static/js/2.2f06d179.chunk.js",
+    "static/js/2.2f06d179.chunk.js.map": "/DIG4503/static/js/2.2f06d179.chunk.js.map",
+    "index.html": "/DIG4503/index.html",
+    "precache-manifest.39e75f213a95ab825aa75f8aab4b34cc.js": "/DIG4503/precache-manifest.39e75f213a95ab825aa75f8aab4b34cc.js",
+    "service-worker.js": "/DIG4503/service-worker.js",
+    "static/css/2.50bb061f.chunk.css.map": "/DIG4503/static/css/2.50bb061f.chunk.css.map",
+    "static/css/main.27919384.chunk.css.map": "/DIG4503/static/css/main.27919384.chunk.css.map",
+    "static/js/2.2f06d179.chunk.js.LICENSE.txt": "/DIG4503/static/js/2.2f06d179.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/DIG4503/static/media/fontawesome-webfont.fee66e71.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e5735d54.js",
+    "static/css/2.50bb061f.chunk.css",
+    "static/js/2.2f06d179.chunk.js",
+    "static/css/main.27919384.chunk.css",
+    "static/js/main.82ca4c10.chunk.js"
+  ]
+}
